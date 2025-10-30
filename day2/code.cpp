@@ -50,8 +50,20 @@ int printALlPrime(int x){
 
     return 0;
 }
+
+int printALlFibonaci(int x){
+    int a = 0;int b = 1; int f;
+    for(int i= 0; i < x; i++){
+       cout << a << endl;
+      f = a + b;
+      a = b;
+      b = f;
+    }
+    return 0;
+}
+
 int main(){
-    int n = 1000;
-    int rimt = printALlPrime(n);
+    int n = 23;
+    int rimt = printALlFibonaci(n);
     return 0;
 }
