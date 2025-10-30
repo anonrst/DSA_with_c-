@@ -38,9 +38,20 @@ bool isPrime(int x){
  }
  return prime;
 }
+
+
+int printALlPrime(int x){
+    for(int i = 0; i < x; i++){
+         bool thisISPime= isPrime(i);
+         if(thisISPime == 1){
+            cout << i << endl;
+         }
+    }
+
+    return 0;
+}
 int main(){
-    int n = 27;
-    bool isItPrime = isPrime(n);
-    cout << isItPrime << "\n";
+    int n = 1000;
+    int rimt = printALlPrime(n);
     return 0;
 }
